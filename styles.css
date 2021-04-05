@@ -179,13 +179,26 @@ a {
 }
 
 .providers__content {
-    padding: 70px 120px;
+    padding: 70px 80px;
 }
 
 .providers__header {
     font-weight: bold;
     font-size: 36px;
     line-height: 56px;
+    position: relative;
+    margin-bottom: 60px;
+}
+
+.providers__header:after {
+    content: '';
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 1px;
+    width: 15%;
+    margin: -30px 0;
+    border-bottom: 4px solid black;
 }
 
 .providers__article {
@@ -210,6 +223,63 @@ a {
     color: #FFF;
     background-color: #458FF6;
 }
+
+.download {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 260px;
+}
+
+.download__header {
+    position: relative;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 48px;
+    margin-bottom: 60px;
+}
+
+.download__header::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 1px;
+    width: 15%;
+    margin: -30px 0;
+    border-bottom: 4px solid black;
+}
+
+.download__paragraph {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 30px;
+    color: #7D7987;
+}
+
+.download__button {
+    position: relative;
+    border: 1.4px solid #458FF6;
+    box-sizing: border-box;
+    border-radius: 55px;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 60px;
+    color: #458FF6;
+    padding: 15px 50px;
+}
+
+.download__button-vector {
+    position: absolute;
+    right: 30px;
+    top: 16px;
+}
+
+.download__button:hover {
+    color: #FFF;
+    background-color: #458FF6;
+}
+
+
 
 @media screen and (max-width: 1300px) {
     .container {
@@ -243,6 +313,31 @@ a {
 
     .providers__content {
         text-align: center;
+    }
+
+    .download {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .download__content {
+        text-align: center;
+    }
+
+    .download__img {
+        max-width: 700px;
+    }
+
+    .download__header::after {
+        right: 33%;
+        left: 33%;
+        width: 33%;
+    }
+
+    .providers__header:after { 
+        right: 33%;
+        left: 33%;
+        width: 33%;
     }
 
 }
