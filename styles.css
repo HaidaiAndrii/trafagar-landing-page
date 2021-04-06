@@ -478,7 +478,7 @@ a {
 
 .footer__sub {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     width: 100%;
     color: #fff;
 }
@@ -633,13 +633,19 @@ a {
 
    .nav__links {
        display: none;
-       width: 400px;
     }
+
+    .navigation {
+        justify-content: center;
+    }
+
+    .header__content {
+        padding: 40px;
+   }
 
     .header__img, .providers__img, .download__img {
         margin: 0 auto;
         width: 80%;
-
     }
 
     .services, .header, .providers, .download, .review, .latests, .latests__link {
@@ -650,7 +656,7 @@ a {
         font-size: 38px;
     }
 
-    .services__header, .providers__header, .download__header, .letests__header {
+    .services__header, .providers__header, .download__header, .letests__header, .review__header {
         font-size: 28px;
     }
 
@@ -706,7 +712,7 @@ a {
       }
       
       .footer__container {
-          flex-direction: column;
+          flex-direction: column-reverse;
           justify-content: space-around;
       }
 
@@ -741,13 +747,16 @@ a {
         text-align: center;
     }
 
+    .services__header, .providers__header, .download__header, .letests__header {
+        font-size: 24px;
+    }
+
     
 }
 
 
 @media screen and (max-width: 600px) {
     .footer__container {
-        flex-direction: column;
         margin-left: 50%;
         transform: translate(-50%, 0);
         width: auto;
@@ -759,6 +768,7 @@ a {
 
     .footer__sub {
         flex-direction: column;
+        align-items: left;
     }
 }
 
@@ -789,5 +799,79 @@ a {
         height: 35px;
         display: block;
         margin-left: 10px;
+    }
+
+    
+}
+
+@media screen and (max-width: 400px) {
+
+    .header {
+        padding: 0 30px;
+    }
+
+    .header__h {
+        font-size: 26px;
+        line-height: 30px;
+    }
+
+    .header__text {
+        max-width: 90%;
+        font-size: 14px;
+        margin: 0;
+        line-height: 25px;
+    }
+
+    .services__article, .services__item-article, .providers__article, .download__paragraph, .preview__text, .latests__item-paragraph {
+        font-size: 14px;
+        line-height: 25px;
+
+    }
+    
+    .header__content {
+        padding: 40px 0;
+        max-width: 90%;
+    }
+    
+    .latests__item {
+        max-width: 320px;
+    }
+
+    .latests__item-img {
+        max-width: 320px;
+    }
+
+    .services__items {
+        padding: 0;
+    }
+
+    .services {
+        padding: 0;
+    }
+
+    .services__article {
+        padding: 5%;
+    }
+
+    .services__items {
+        padding: 5%;
+    }
+
+    .letests__header {
+        margin-bottom: 40px;
+    }
+
+    .services, .header, .providers, .download, .review, .latests, .latests__link {
+        margin-bottom: 50px;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .latests__item-img {
+        max-width: 280px;
+    }
+
+    .latests__item {
+        max-width: 280px;
     }
 }
