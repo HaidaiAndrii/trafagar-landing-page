@@ -667,6 +667,14 @@ a {
         margin-bottom: 40px;
     }
 
+    .footer__column-header {
+        line-height: 12px;
+    }
+    
+    .footer__column-header:focus {
+        outline: none;
+    }
+
     .sub-menu-company { 
         display: none; 
      } 
@@ -741,16 +749,45 @@ a {
     .footer__container {
         flex-direction: column;
         margin-left: 50%;
-        transform: translate(-30%, 0);
+        transform: translate(-50%, 0);
+        width: auto;
     }
 
     .footer__column {
         margin-bottom: 30px;
     }
 
-    .footer__links {
-        margin: 0;
-        padding: 0;
+    .footer__sub {
+        flex-direction: column;
     }
 }
 
+@media(max-width: 767px){
+    .menu-burger__header span, .menu-burger__header:after, .menu-burger__header:before{
+        height: 3px;
+        width: 100%;
+        position: absolute;
+        background: #515758;
+        margin: 0 auto;
+    }
+    .menu-burger__header span{
+        top: 17px;
+    }
+    .menu-burger__header:after, .menu-burger__header:before{
+        content: '';
+    }
+    .menu-burger__header:after{
+        bottom: 5px;
+    }
+    .menu-burger__header:before{
+        top: 5px;
+    }
+
+    .menu-burger__header {
+        position: relative; /* задаем относительное позиционирование */
+        width: 40px; /* определяем размеры блока */
+        height: 35px;
+        display: block;
+        margin-left: 10px;
+    }
+}
