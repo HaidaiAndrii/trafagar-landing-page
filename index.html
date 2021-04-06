@@ -13,16 +13,16 @@
 
 <body>
     <nav class="navigation container">
-        <div>
+        <a href="">
             <img class="header__logo" src="pictures/logo.png" alt="logo">
-        </div>
+         </a>
         <nav>
             <ul class="nav__links ">
-                <li><a href="#" class="nav__link">Home</a></li>
-                <li><a href="#" class="nav__link">Find a doctor</a></li>
-                <li><a href="#" class="nav__link">Apps</a></li>
-                <li><a href="#" class="nav__link">Testimanials</a></li>
-                <li><a href="#" class="nav__link">About us</a></li>
+                <li><a href="" class="nav__link">Home</a></li>
+                <li><a href="#find" class="nav__link">Find a doctor</a></li>
+                <li><a href="#apps" class="nav__link">Apps</a></li>
+                <li><a href="#testimanials" class="nav__link">Testimanials</a></li>
+                <li><a href="#aboutus" class="nav__link">About us</a></li>
             </ul>
         </nav>
     </nav>
@@ -44,7 +44,7 @@
         <img src="pictures/illustration.png" class="header__img" alt="header illustration">
     </div>
 
-    <section class="services container">
+    <section class="services container" id="find">
         <h2 class="services__header">
             Our services
         </h2>
@@ -133,7 +133,7 @@
     </section>
 
 
-    <section class="download container">
+    <section class="download container" id="apps">
         <div class="download__content">
             <h2 class="download__header">
                 Download our mobile apps
@@ -146,7 +146,7 @@
             </p>
             <a href="" class="download__button">
                 Download
-                <img class="download__button-vector" src="pictures/Vector.png" alt="vector picture">
+                <img class="download__button-vector" src="pictures/Vector.svg" alt="vector picture">
             </a>
         </div>
         <img src="pictures/trafalgarillustration2.png" class="download__img" alt="illustration">
@@ -155,7 +155,7 @@
 
 
 
-    <section class="review">
+    <section class="review" id="testimanials">
         <h2 class="review__header">
             What our customer are saying
         </h2>
@@ -178,7 +178,7 @@
     </section>
 
 
-    <section class="latests container">
+    <section class="latests container" id="aboutus">
         <h2 class="letests__header">
             Check out our latest article
         </h2>
@@ -251,40 +251,47 @@
                 <div class="footer__logo">
                     <img src="./pictures/footerTrafalgar.png" class="footer__logo-img" alt="logo"> Trafalgar
                 </div>
-                    <p>
-                        Trafalgar provides progressive, and affordable healthcare,
-                        accessible on mobile and online for everyone
-                </p>
                 <p>
+                    Trafalgar provides progressive, and affordable healthcare,
+                    accessible on mobile and online for everyone
+                </p>
+                <p class="main-item">
                     ©Trafalgar PTY LTD 2020. All rights reserved
                 </p>
             </div>
-            <div class="footer__column">
-                <ul class="footer__links">
-                    <li class="footer__li"><a href="" class="footer__link footer__column-header">Company</a></li>
-                    <li class="footer__li"><a href="" class="footer__link">About</a></li>
-                    <li class="footer__li"><a href="" class="footer__link">Testimanials</a></li>
-                    <li class="footer__li"><a href="" class="footer__link"> find a doctor</a></li>
-                    <li class="footer__li"><a href="" class="footer__link">Apps</a></li>
-                </ul>
-            </div>
-            <div class="footer__column">
-                <ul class="footer__links">
-                    <li class="footer__li"><a href="" class="footer__link footer__column-header">Region</a></li>
-                    <li class="footer__li"><a href="" class="footer__link">Indonesia</a></li>
-                    <li class="footer__li"><a href="" class="footer__link">Singapore</a></li>
-                    <li class="footer__li"><a href="" class="footer__link"> Hongkong</a></li>
-                    <li class="footer__li"><a href="" class="footer__link">Canada</a></li>
-                </ul>
-            </div>
-            <div class="footer__column">
-                <ul class="footer__links">
-                    <li class="footer__li"><a href="" class="footer__link footer__column-header">Help</a></li>
-                    <li class="footer__li"><a href="" class="footer__link">Help center</a></li>
-                    <li class="footer__li"><a href="" class="footer__link">Contact support</a></li>
-                    <li class="footer__li"><a href="" class="footer__link"> Instructions</a></li>
-                    <li class="footer__li"><a href="" class="footer__link">how it works</a></li>
-                </ul>
+
+            <div class="footer__sub">
+
+                <div class="footer__column">
+                    <a class="main-item footer__link footer__column-header" href="javascript:void(0);"
+                        tabindex="1">Company</a>
+                    <ul class="footer__links sub-menu-company">
+                        <li class="footer__li"><a href="" class="footer__link">About</a></li>
+                        <li class="footer__li"><a href="" class="footer__link">Testimanials</a></li>
+                        <li class="footer__li"><a href="" class="footer__link"> find a doctor</a></li>
+                        <li class="footer__li"><a href="" class="footer__link">Apps</a></li>
+                    </ul>
+                </div>
+                <div class="footer__column">
+                    <a class="main-item footer__link footer__column-header" href="javascript:void(0);"
+                        tabindex="1">Region</a>
+                    <ul class="footer__links sub-menu-region">
+                        <li class="footer__li"><a href="" class="footer__link">Indonesia</a></li>
+                        <li class="footer__li"><a href="" class="footer__link">Singapore</a></li>
+                        <li class="footer__li"><a href="" class="footer__link"> Hongkong</a></li>
+                        <li class="footer__li"><a href="" class="footer__link">Canada</a></li>
+                    </ul>
+                </div>
+                <div class="footer__column">
+                    <a class="main-item footer__link footer__column-header" href="javascript:void(0);"
+                        tabindex="1">Help</a>
+                    <ul class="footer__links sub-menu-help">
+                        <li class="footer__li"><a href="" class="footer__link">Help center</a></li>
+                        <li class="footer__li"><a href="" class="footer__link">Contact support</a></li>
+                        <li class="footer__li"><a href="" class="footer__link"> Instructions</a></li>
+                        <li class="footer__li"><a href="" class="footer__link">how it works</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
     </footer>

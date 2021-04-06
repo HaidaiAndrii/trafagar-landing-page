@@ -4,6 +4,7 @@ body {
 }
 
 * {
+    scroll-behavior: smooth;
     box-sizing: border-box;
 }
 
@@ -215,14 +216,15 @@ a {
 }
 
 .providers__button {
-    border: 1.4px solid #458FF6;
-    box-sizing: border-box;
-    border-radius: 55px;
+    text-align: center;
+    padding: 15px 50px;
     font-weight: bold;
     font-size: 18px;
     line-height: 60px;
     color: #458FF6;
-    padding: 15px 50px;
+    background-color: #FFFFFF;
+    border: 1.4px solid #458FF6;
+    border-radius: 55px;
 }
 
 .providers__button:hover {
@@ -277,7 +279,7 @@ a {
 .download__button-vector {
     position: absolute;
     right: 30px;
-    top: 16px;
+    top: 19px;
 }
 
 .download__button:hover {
@@ -445,6 +447,7 @@ a {
    max-width: 1600px;
    display: flex;
    justify-content: space-around;
+   align-items: center;
 }
 
 .footer {
@@ -463,8 +466,7 @@ a {
     font-weight: bold;
     font-size: 24px;
     line-height: 30px;
-
-color: #FFFFFF;
+    color: #FFFFFF;
 }
 
 .footer__column {
@@ -474,10 +476,21 @@ color: #FFFFFF;
     color: #fff;
 }
 
+.footer__sub {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    color: #fff;
+}
+
 .footer__column-header {
     font-weight: bold;
     font-size: 20px;
     line-height: 60px;
+}
+
+.footer__links {
+    padding: 0;
 }
 
 .footer__link {
@@ -488,6 +501,8 @@ color: #FFFFFF;
 .footer__li {
     margin-bottom: 20px;
 }
+
+
 
 
 
@@ -530,12 +545,11 @@ color: #FFFFFF;
     .services__items {
         padding: 0 10%;
         margin: 0 0 70px;
-        display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
 
     .services__item {
-        margin: 30px;
+        margin: 0 auto;
     }
 
     .providers {
@@ -550,6 +564,7 @@ color: #FFFFFF;
 
     .providers__content {
         text-align: center;
+        padding: 0;
     }
 
     .download {
@@ -601,8 +616,7 @@ color: #FFFFFF;
     .review__content {
         flex-direction: column;
         align-items: center;
-    }   
-
+    }
 }
 
 @media screen and (max-width: 1000px) {
@@ -652,6 +666,46 @@ color: #FFFFFF;
     .latests__items {
         margin-bottom: 40px;
     }
+
+    .sub-menu-company { 
+        display: none; 
+     } 
+         .main-item:focus ~ .sub-menu-company, 
+         .main-item:active ~ .sub-menu-company, 
+         .sub-menu-company:hover 
+     { 
+        display: block; 
+     } 
+ 
+     .sub-menu-region { 
+         display: none; 
+      } 
+          .main-item:focus ~ .sub-menu-region, 
+          .main-item:active ~ .sub-menu-region, 
+          .sub-menu-region:hover 
+      { 
+         display: block; 
+      } 
+ 
+      .sub-menu-help { 
+         display: none; 
+      } 
+          .main-item:focus ~ .sub-menu-help, 
+          .main-item:active ~ .sub-menu-help, 
+          .sub-menu-help:hover 
+      { 
+         display: block; 
+      }
+      
+      .footer__container {
+          flex-direction: column;
+          justify-content: space-around;
+      }
+
+      .footer__column {
+          margin: 0 auto;
+          margin-bottom: 40px;
+      }
   
 }
 
@@ -659,11 +713,27 @@ color: #FFFFFF;
     .services__items {
         margin: 0 0 40px;
         grid-template-columns: repeat(1, 1fr);
+        grid-gap: 0;
+    }
+
+    .services__item {
+        margin-bottom: 40px;
     }
 
     .header__content {
         padding-top: 50px;
     }
+
+    .review__human {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .review__name {
+        text-align: center;
+    }
+
+    
 }
 
 
