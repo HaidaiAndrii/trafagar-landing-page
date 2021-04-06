@@ -435,6 +435,10 @@ a {
     color: #4089ED;
 }
 
+.latests__link:hover {
+    color: #81aef1;
+}
+
 .latests__button {
     border: 1.4px solid #458FF6;
     box-sizing: border-box;
