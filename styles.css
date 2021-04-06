@@ -63,6 +63,10 @@ a {
     max-height: 600px;
 }
 
+.header__content {
+    padding-top: 150px ;
+}
+
 .header__h {
     font-weight: bold;
     font-size: 48px;
@@ -75,23 +79,25 @@ a {
     width: 350px;
     color: #7D7987;
     margin-bottom: 45px;
+    font-weight: 300;
+    font-size: 21px;
+    line-height: 32px;
 }
 
 .header__button {
-    background: #458FF6;
-    border-radius: 55px;
+    text-align: center;
+    padding: 15px 50px;
     font-weight: bold;
-    color: white;
     font-size: 18px;
-    line-height: 60px;
-    border: none;
-    width: 200px;
+    color: #458FF6;
+    background-color: #FFFFFF;
+    border: 1.4px solid #458FF6;
+    border-radius: 55px;
 }
 
 .header__button:hover {
-    color: #458FF6;
-    background: white;
-    border: 1px solid #458FF6;
+    background-color: #458FF6 ;
+    color: #fff;
 }
 
 .services {
@@ -515,8 +521,10 @@ color: #FFFFFF;
         padding: 0 50px;
     }
 
-    .header__img {
-        width: 400px;
+    .header {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
     .services__items {
@@ -599,11 +607,6 @@ color: #FFFFFF;
 
 @media screen and (max-width: 1000px) {
 
-    .header {
-        flex-direction: column;
-        justify-content: center;
-    }
-
     .header__content {
         display: flex;
         flex-direction: column;
@@ -629,7 +632,26 @@ color: #FFFFFF;
         margin-bottom: 100px;
     }
 
+    .header__h {
+        font-size: 38px;
+    }
 
+    .services__header, .providers__header, .download__header, .letests__header {
+        font-size: 28px;
+    }
+
+    .providers__button, .download__button, .latests__button, .services__button, .header__button {
+        padding: 10px 30px;
+    }
+
+    .download__button-vector {
+        right: 15px;
+        top: 13px;
+    }
+
+    .latests__items {
+        margin-bottom: 40px;
+    }
   
 }
 
@@ -637,6 +659,10 @@ color: #FFFFFF;
     .services__items {
         margin: 0 0 40px;
         grid-template-columns: repeat(1, 1fr);
+    }
+
+    .header__content {
+        padding-top: 50px;
     }
 }
 
