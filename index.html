@@ -12,22 +12,34 @@
 </head>
 
 <body>
-    <div class="menu-burger__header">
-        <span></span>
-    </div>
+    <nav class="mobile-menu">
+        <input type="checkbox" id="checkbox" class="mobile-menu__checkbox">
+        <label for="checkbox" class="mobile-menu__btn"><div class="mobile-menu__icon"></div></label>
+        <div class="mobile-menu__container">
+        <ul class="mobile-menu__list">
+            <li class="mobile-menu__item"><a href="#" class="mobile-menu__link ">Home</a></li>
+            <li class="mobile-menu__item"><a href="#find" class="mobile-menu__link">Find a doctor</a></li>
+            <li class="mobile-menu__item"><a href="#apps" class="mobile-menu__link">Apps</a></li>
+            <li class="mobile-menu__item"><a href="#testimanials" class="mobile-menu__link">Testimanials</a></li>
+            <li class="mobile-menu__item"><a href="#aboutus" class="mobile-menu__link">About us</a></li>
+        </ul>
+        </div>
+    </nav>
 
     <nav class="navigation container">
         <a href="">
             <img class="header__logo" src="pictures/logo.png" alt="logo">
-         </a>
-        <nav>
-            <ul class="nav__links ">
-                <li><a href="" class="nav__link">Home</a></li>
-                <li><a href="#find" class="nav__link">Find a doctor</a></li>
-                <li><a href="#apps" class="nav__link">Apps</a></li>
-                <li><a href="#testimanials" class="nav__link">Testimanials</a></li>
-                <li><a href="#aboutus" class="nav__link">About us</a></li>
+        </a>
+
+        <div class="mobile-menu__container">
+            <ul class="nav__links mobile-menu__list">
+                <li class="mobile-menu__item"><a href="" class="nav__link mobile-menu__link">Home</a></li>
+                <li class="mobile-menu__item"><a href="#find" class="nav__link mobile-menu__link">Find a doctor</a></li>
+                <li class="mobile-menu__item"><a href="#apps" class="nav__link mobile-menu__link">Apps</a></li>
+                <li class="mobile-menu__item"><a href="#testimanials" class="nav__link mobile-menu__link">Testimanials</a></li>
+                <li class="mobile-menu__item"><a href="#aboutus" class="nav__link mobile-menu__link">About us</a></li>
             </ul>
+        </div>
         </nav>
     </nav>
 
