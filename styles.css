@@ -628,12 +628,22 @@ a {
        display: none;
     }
 
+    .header__logo {
+        display: none;
+    }
+
+    .header__logo-mobile {
+        position: absolute;
+        top: 4px;
+        left: 10px;
+    }
+
     .navigation {
         justify-content: center;
     }
 
     .header__content {
-        padding: 40px;
+        padding: 0 40px 40px;
    }
 
     .header__img, .providers__img, .download__img {
@@ -726,10 +736,6 @@ a {
         margin-bottom: 40px;
     }
 
-    .header__content {
-        padding-top: 50px;
-    }
-
     .review__human {
         flex-direction: column;
         align-items: center;
@@ -789,7 +795,6 @@ a {
     }
     
     .header__content {
-        padding: 40px 0;
         max-width: 90%;
     }
     
@@ -838,7 +843,7 @@ a {
 }
 
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1000px) {
 
     .navigation {
         margin-top: 70px;
