@@ -1,0 +1,20 @@
+.providers {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 200px;
+}
+
+.providers__content {
+    padding: 70px 80px;
+}
+
+.providers__header:after {
+    content: '';
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 1px;
+    width: 15%;
+    margin: -30px 0;
+    border-bottom: 4px solid black;
+}
