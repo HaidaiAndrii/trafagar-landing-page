@@ -5,7 +5,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./src/styles.css">
+    <link rel="stylesheet" href="./src/header.css">
+    <link rel="stylesheet" href="./src/services.css">
+    <link rel="stylesheet" href="./src/providers.css">
+    <link rel="stylesheet" href="./src/download.css">
+    <link rel="stylesheet" href="./src/review.css">
+    <link rel="stylesheet" href="./src/latests.css">
+    <link rel="stylesheet" href="./src/footer.css">
+    <link rel="stylesheet" href="./src/media.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="./pictures/footerTrafalgar.png" type="image/x-icon">
@@ -37,39 +45,41 @@
 
         <div class="mobile-menu__container">
             <ul class="nav__links mobile-menu__list">
-                <li class="mobile-menu__item"><a href="" class="nav__link mobile-menu__link">Home</a></li>
-                <li class="mobile-menu__item"><a href="#find" class="nav__link mobile-menu__link">Find a doctor</a></li>
-                <li class="mobile-menu__item"><a href="#apps" class="nav__link mobile-menu__link">Apps</a></li>
-                <li class="mobile-menu__item"><a href="#testimanials" class="nav__link mobile-menu__link">Testimanials</a></li>
-                <li class="mobile-menu__item"><a href="#aboutus" class="nav__link mobile-menu__link">About us</a></li>
+                <li class=""><a href="" class="nav__link ">Home</a></li>
+                <li class="menu__item"><a href="#find" class="nav__link ">Find a doctor</a></li>
+                <li class="menu__item"><a href="#apps" class="nav__link ">Apps</a></li>
+                <li class="menu__item"><a href="#testimanials" class="nav__link">Testimanials</a></li>
+                <li class="menu__item"><a href="#aboutus" class="nav__link ">About us</a></li>
             </ul>
         </div>
         </nav>
     </nav>
 
-    <div class="header container">
-        <div class="header__content">
-            <h1 class="header__h">
+    <div class="hero container">
+        <div class="hero__content">
+            <h1 class="hero__h">
                 Virtual healthcare for you
             </h1>
-            <p class="header__text">
+            <p class="hero__text">
                 Trafalgar provides progressive, and affordable
                 healthcare, accessible on mobile and online
                 for everyone
             </p>
-            <a class="header__button" href="#">
-                Consult today
-            </a>
+            <div>
+                <a class="button button-fill" href="#">
+                    Consult today
+                </a>
+            </div>
         </div>
-        <img src="pictures/illustration.png" class="header__img" alt="header illustration">
+        <img src="pictures/illustration.png" class="hero__img" alt="header illustration">
     </div>
 
     <section class="services container" id="find">
-        <h2 class="services__header">
+        <h2 class="head2 services__header">
             Our services
         </h2>
 
-        <p class="services__article">
+        <p class="services__article article">
             We provide to you the best choiches for you. Adjust it to your health
             needs and make sure your undergo treatment with our highly qualified doctors you
             can consult with us which type of service is suitable for your health
@@ -77,61 +87,73 @@
 
         <div class="services__items">
             <div class="services__item">
-                <img src="./pictures/frame1.png" alt="Service picture">
+                <div class="services__img-container">
+                    <img src="./pictures/frame1.png" class="services__illustration" alt="Service picture">
+                </div>
                 <h3 class="services__item-header">Search doctor</h3>
-                <p class="services__item-article">
+                <p class="services__item-article article">
                     Choose your doctor from thousands of specialist,
                     general, and trusted hospitals
                 </p>
             </div>
 
             <div class="services__item">
-                <img src="./pictures/frame2.png" alt="Service picture">
+                <div class="services__img-container">
+                    <img src="./pictures/frame2.png" class="services__illustration" alt="Service picture">
+                </div>
                 <h3 class="services__item-header">Online pharmacy</h3>
-                <p class="services__item-article">
+                <p class="services__item-article article">
                     Buy your medicines with our mobile
                     application with a simple delivery system
                 </p>
             </div>
 
             <div class="services__item">
-                <img src="./pictures/frame3.png" alt="Service picture ">
+                <div class="services__img-container">
+                    <img src="./pictures/frame3.png" class="services__illustration" alt="Service picture ">
+                </div>
                 <h3 class="services__item-header">Consultation</h3>
-                <p class="services__item-article">
+                <p class="services__item-article article">
                     Free consultation with our trusted doctors
                     and get the best recomendations
                 </p>
             </div>
 
             <div class="services__item">
-                <img src="./pictures/frame4.png" alt="Service picture">
+                <div class="services__img-container">
+                    <img src="./pictures/frame4.png" class="services__illustration" alt="Service picture">
+                </div>
                 <h3 class="services__item-header">Details info</h3>
-                <p class="services__item-article">
+                <p class="services__item-article article">
                     Free consultation with our trusted doctors
                     and get the best recomendations
                 </p>
             </div>
 
             <div class="services__item">
-                <img src="./pictures/frame5.png" alt="Service picture">
+                <div class="services__img-container">
+                    <img src="./pictures/frame5.png" class="services__illustration" alt="Service picture">
+                </div>
                 <h3 class="services__item-header">Emergency care</h3>
-                <p class="services__item-article">
+                <p class="services__item-article article">
                     You can get 24/7 urgent care for yourself or your
                     children and your lovely family
                 </p>
             </div>
 
             <div class="services__item">
-                <img src="./pictures/frame6.png" alt="Service picture">
+                <div class="services__img-container">
+                    <img src="./pictures/frame6.png" class="services__illustration" alt="Service picture">
+                </div>
                 <h3 class="services__item-header">Tracking</h3>
-                <p class="services__item-article">
+                <p class="services__item-article article">
                     Track and save your medical history and health data
                 </p>
             </div>
         </div>
 
         <div class="services__links">
-            <a href="#" class="services__button">Learn more</a>
+            <a href="#" class="button"> Learn more</a>
         </div>
     </section>
 
@@ -140,22 +162,22 @@
     <section class="providers container">
         <img class="providers__img" src="pictures/trafalgarSection2.png" alt="illustration">
         <div class="providers__content">
-            <h2 class="providers__header">
+            <h2 class="providers__header head2">
                 Leading healthcare providers
             </h2>
-            <p class="providers__article">
+            <p class="providers__article article">
                 Trafalgar provides progressive, and affordable healthcare,
                 accessible on mobile and online for everyone. To us, it’s not just work.
                 We take pride in the solutions we deliver
             </p>
-            <a href="" class="providers__button">Learn more</a>
+            <a href="" class="button">Learn more</a>
         </div>
     </section>
 
 
     <section class="download container" id="apps">
         <div class="download__content">
-            <h2 class="download__header">
+            <h2 class="download__header head2">
                 Download our mobile apps
             </h2>
             <p class="download__paragraph">
@@ -164,7 +186,7 @@
                 (no tedeous form, long calls,
                 or administrative hassle) and securely
             </p>
-            <a href="" class="download__button">
+            <a href="" class="button button-vector">
                 Download
                 <img class="download__button-vector" src="pictures/Vector.png" alt="vector picture">
             </a>
@@ -199,14 +221,14 @@
 
 
     <section class="latests container" id="aboutus">
-        <h2 class="letests__header">
+        <h2 class="letests__header head2">
             Check out our latest article
         </h2>
 
         <div class="latests__items">
 
             <div class="latests__item">
-                <div class="">
+                <div>
                     <img src="./pictures/lat-img-1.png" class="latests__item-img" alt="Item illustration">
                 </div>
                 <div class="latests__content">
@@ -223,7 +245,7 @@
             </div>
 
             <div class="latests__item">
-                <div class="">
+                <div>
                     <img src="./pictures/latests2.png" class="latests__item-img" alt="Item illustration">
                 </div>
                 <div class="latests__content">
@@ -241,7 +263,7 @@
             </div>
 
             <div class="latests__item">
-                <div class="">
+                <div>
                     <img src="./pictures/latests3.png" class="latests__item-img" alt="Item illustration">
                 </div>
                 <div class="latests__content">
@@ -260,7 +282,7 @@
 
         </div>
         <div class="latests__link">
-            <a href="#" class="latests__button">View all</a>
+            <a href="#" class="button">View all</a>
         </div>
     </section>
 
