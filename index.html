@@ -21,6 +21,18 @@
 </head>
 
 <body>
+    <form onsubmit="return false" class="search-item-form modal__search">
+        <input type='text' class="search-input" />
+        <button name="search" class="search-button">search</button>
+        <button name="Clear" class="clear-search-select" disabed>Clear</button>
+        <div class="search-form-elemnet-change">
+
+            <button name="next" class="select-next-element" disabled>Next</button>
+            <button name="prev" class="select-prec-element" disabled>Prev</button>
+            <button name="child" class="select-child-element" disabled>Child</button>
+            <button name="parent" class="select-parent-element" disabled>Parent</button>
+        </div>
+    </form>
     <nav class="mobile-menu">
         <a href="">
             <img class="header__logo-mobile" src="pictures/logoSvg.svg" alt="logo">
@@ -28,13 +40,13 @@
         <input type="checkbox" id="checkbox" class="mobile-menu__checkbox">
         <label for="checkbox" class="mobile-menu__btn"><div class="mobile-menu__icon"></div></label>
         <div class="mobile-menu__container">
-        <ul class="mobile-menu__list">
-            <li class="mobile-menu__item"><a href="#" class="mobile-menu__link ">Home</a></li>
-            <li class="mobile-menu__item"><a href="#find" class="mobile-menu__link">Find a doctor</a></li>
-            <li class="mobile-menu__item"><a href="#apps" class="mobile-menu__link">Apps</a></li>
-            <li class="mobile-menu__item"><a href="#testimanials" class="mobile-menu__link">Testimanials</a></li>
-            <li class="mobile-menu__item"><a href="#aboutus" class="mobile-menu__link">About us</a></li>
-        </ul>
+            <ul class="mobile-menu__list">
+                <li class="mobile-menu__item"><a href="#" class="mobile-menu__link ">Home</a></li>
+                <li class="mobile-menu__item"><a href="#find" class="mobile-menu__link">Find a doctor</a></li>
+                <li class="mobile-menu__item"><a href="#apps" class="mobile-menu__link">Apps</a></li>
+                <li class="mobile-menu__item"><a href="#testimanials" class="mobile-menu__link">Testimanials</a></li>
+                <li class="mobile-menu__item"><a href="#aboutus" class="mobile-menu__link">About us</a></li>
+            </ul>
         </div>
     </nav>
 
@@ -52,7 +64,7 @@
                 <li class="menu__item"><a href="#aboutus" class="nav__link ">About us</a></li>
             </ul>
         </div>
-        </nav>
+    </nav>
     </nav>
 
     <div class="hero container">
@@ -61,9 +73,7 @@
                 Virtual healthcare for you
             </h1>
             <p class="hero__text">
-                Trafalgar provides progressive, and affordable
-                healthcare, accessible on mobile and online
-                for everyone
+                Trafalgar provides progressive, and affordable healthcare, accessible on mobile and online for everyone
             </p>
             <div>
                 <a class="button button-fill" href="#">
@@ -80,9 +90,7 @@
         </h2>
 
         <p class="services__article article">
-            We provide to you the best choiches for you. Adjust it to your health
-            needs and make sure your undergo treatment with our highly qualified doctors you
-            can consult with us which type of service is suitable for your health
+            We provide to you the best choiches for you. Adjust it to your health needs and make sure your undergo treatment with our highly qualified doctors you can consult with us which type of service is suitable for your health
         </p>
 
         <div class="services__items">
@@ -92,8 +100,7 @@
                 </div>
                 <h3 class="services__item-header">Search doctor</h3>
                 <p class="services__item-article article">
-                    Choose your doctor from thousands of specialist,
-                    general, and trusted hospitals
+                    Choose your doctor from thousands of specialist, general, and trusted hospitals
                 </p>
             </div>
 
@@ -103,8 +110,7 @@
                 </div>
                 <h3 class="services__item-header">Online pharmacy</h3>
                 <p class="services__item-article article">
-                    Buy your medicines with our mobile
-                    application with a simple delivery system
+                    Buy your medicines with our mobile application with a simple delivery system
                 </p>
             </div>
 
@@ -114,8 +120,7 @@
                 </div>
                 <h3 class="services__item-header">Consultation</h3>
                 <p class="services__item-article article">
-                    Free consultation with our trusted doctors
-                    and get the best recomendations
+                    Free consultation with our trusted doctors and get the best recomendations
                 </p>
             </div>
 
@@ -125,8 +130,7 @@
                 </div>
                 <h3 class="services__item-header">Details info</h3>
                 <p class="services__item-article article">
-                    Free consultation with our trusted doctors
-                    and get the best recomendations
+                    Free consultation with our trusted doctors and get the best recomendations
                 </p>
             </div>
 
@@ -136,8 +140,7 @@
                 </div>
                 <h3 class="services__item-header">Emergency care</h3>
                 <p class="services__item-article article">
-                    You can get 24/7 urgent care for yourself or your
-                    children and your lovely family
+                    You can get 24/7 urgent care for yourself or your children and your lovely family
                 </p>
             </div>
 
@@ -166,9 +169,7 @@
                 Leading healthcare providers
             </h2>
             <p class="providers__article article">
-                Trafalgar provides progressive, and affordable healthcare,
-                accessible on mobile and online for everyone. To us, it’s not just work.
-                We take pride in the solutions we deliver
+                Trafalgar provides progressive, and affordable healthcare, accessible on mobile and online for everyone. To us, it’s not just work. We take pride in the solutions we deliver
             </p>
             <a href="" class="button">Learn more</a>
         </div>
@@ -181,10 +182,7 @@
                 Download our mobile apps
             </h2>
             <p class="download__paragraph">
-                Our dedicated patient engagement app and
-                web portal allow you to access information instantaneously
-                (no tedeous form, long calls,
-                or administrative hassle) and securely
+                Our dedicated patient engagement app and web portal allow you to access information instantaneously (no tedeous form, long calls, or administrative hassle) and securely
             </p>
             <a href="" class="button button-vector">
                 Download
@@ -213,8 +211,7 @@
                 </p>
             </div>
             <p class="review__text">
-                “Our dedicated patient engagement app and web portal allow you to access information
-                instantaneously (no tedeous form, long calls, or administrative hassle) and securely”
+                “Our dedicated patient engagement app and web portal allow you to access information instantaneously (no tedeous form, long calls, or administrative hassle) and securely”
             </p>
         </div>
     </section>
@@ -232,11 +229,8 @@
                     <img src="./pictures/lat-img-1.png" class="latests__item-img" alt="Item illustration">
                 </div>
                 <div class="latests__content">
-                    <h3 class="latests__item-header">Disease detection, check
-                        up in the laboratory</h3>
-                    <p class="latests__item-paragraph">In this case, the role of the health laboratory is very important
-                        to do
-                        a disease detection...</p>
+                    <h3 class="latests__item-header">Disease detection, check up in the laboratory</h3>
+                    <p class="latests__item-paragraph">In this case, the role of the health laboratory is very important to do a disease detection...</p>
                     <a href="#" class="latests__link">
                         Read more
                         <img src="./pictures/Vector2.png" alt="Vector picture">
@@ -294,8 +288,7 @@
                     <img src="./pictures/footerTrafalgar.png" class="footer__logo-img" alt="logo"> Trafalgar
                 </div>
                 <p>
-                    Trafalgar provides progressive, and affordable healthcare,
-                    accessible on mobile and online for everyone
+                    Trafalgar provides progressive, and affordable healthcare, accessible on mobile and online for everyone
                 </p>
                 <p class="main-item">
                     ©Trafalgar PTY LTD 2020. All rights reserved
@@ -305,8 +298,7 @@
             <div class="footer__sub">
 
                 <div class="footer__column">
-                    <a class="main-item footer__link footer__column-header" href="javascript:void(0);"
-                        tabindex="1">Company</a>
+                    <a class="main-item footer__link footer__column-header" href="javascript:void(0);" tabindex="1">Company</a>
                     <ul class="footer__links sub-menu-company">
                         <li class="footer__li"><a href="" class="footer__link">About</a></li>
                         <li class="footer__li"><a href="" class="footer__link">Testimanials</a></li>
@@ -315,8 +307,7 @@
                     </ul>
                 </div>
                 <div class="footer__column">
-                    <a class="main-item footer__link footer__column-header" href="javascript:void(0);"
-                        tabindex="1">Region</a>
+                    <a class="main-item footer__link footer__column-header" href="javascript:void(0);" tabindex="1">Region</a>
                     <ul class="footer__links sub-menu-region">
                         <li class="footer__li"><a href="" class="footer__link">Indonesia</a></li>
                         <li class="footer__li"><a href="" class="footer__link">Singapore</a></li>
@@ -325,8 +316,7 @@
                     </ul>
                 </div>
                 <div class="footer__column">
-                    <a class="main-item footer__link footer__column-header" href="javascript:void(0);"
-                        tabindex="1">Help</a>
+                    <a class="main-item footer__link footer__column-header" href="javascript:void(0);" tabindex="1">Help</a>
                     <ul class="footer__links sub-menu-help">
                         <li class="footer__li"><a href="" class="footer__link">Help center</a></li>
                         <li class="footer__li"><a href="" class="footer__link">Contact support</a></li>
@@ -337,7 +327,7 @@
             </div>
         </div>
     </footer>
-
+    <script src="./script/script.js"></script>
 </body>
 
 </html>
