@@ -1,7 +1,7 @@
 const modal = `
 <form onsubmit="return false" class="search-item-form modal__search">
         <input type='text' class="search-input" /><br/>
-        <span class='search-span-error'>Elemet not found (404)  (. )( .)</span><br/>
+        <span class='search-span-error'>Elemet not found (404)</span><br/>
         <button name="search" class="search-button">search</button>
         <button name="Clear" class="clear-search-select" disabed>Clear</button>
         <div class="search-form-elemnet-change">
@@ -13,7 +13,7 @@ const modal = `
             </div>
             </form>`;
 const main = document.querySelector('body');
-main.insertAdjacentHTML('beforebegin', modal);
+main.insertAdjacentHTML('afterend', modal);
 
 const searchModal = document.querySelector('.modal__search');
 
@@ -34,9 +34,14 @@ searchModal.style.padding = '50px';
 searchModal.style.width = `300 px `;
 searchModal.style.height = `300 px `;
 searchModal.style.backgroundColor = `black `;
+searchModal.style.position = 'absolute';
+searchModal.style.top = 0;
 
 function scrollToElemnt(element) {
+    searchModal.style.position = 'fixed';
     window.scrollTo(pageXOffset, element.offsetTop);
+    searchModal.style.top = searchModal.offsetTop;
+
 };
 
 
@@ -63,7 +68,16 @@ searchButton.addEventListener('click', () => {
     if (element) {
         unSelectElement();
     }
-    if (searchInput.value) {
+
+    if(!searchInput.value) {
+        if(element) {
+            unSelectElement();
+            element = '';
+            checkElements();
+        }
+        return;
+    }
+
         element = document.querySelector(`${searchInput.value}`);
         if (!element) {
             searchSpanError.style.visibility = '';
@@ -72,7 +86,7 @@ searchButton.addEventListener('click', () => {
             scrollToElemnt(element);
             searchSpanError.style.visibility = 'hidden';
         }
-    }
+
     if (element) {
         checkElements();
         selectElement();
@@ -114,7 +128,7 @@ searchformButtonSection.addEventListener('click', function(event) {
     checkElements();
     return undefined;
 })
-searchModal.style.position = 'fixed';
+// searchModal.style.position = 'fixed';
 
 let x = 0;
 let y = 0;
@@ -146,3 +160,5 @@ const mouseUpHandler = function() {
 };
 
 searchModal.addEventListener('mousedown', mouseDownHandler);
+
+
