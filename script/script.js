@@ -35,12 +35,12 @@ searchModal.style.width = `300 px `;
 searchModal.style.height = `300 px `;
 searchModal.style.backgroundColor = `black `;
 searchModal.style.position = 'absolute';
-searchModal.style.top = 0;
+searchModal.style.top = '15px';
+searchModal.style.left = '10px';
 
 function scrollToElemnt(element) {
     searchModal.style.position = 'fixed';
     window.scrollTo(pageXOffset, element.offsetTop);
-    searchModal.style.top = searchModal.offsetTop;
 
 };
 
