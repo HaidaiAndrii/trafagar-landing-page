@@ -26,6 +26,13 @@ let parentElButton = document.querySelector('.select-parent-element');
 let clearInputButton = document.querySelector('.clear-search-select');
 let searchformButtonSection = document.querySelector('.search-form-elemnet-change');
 let searchSpanError = document.querySelector('.search-span-error');
+let buttons = document.querySelectorAll('.search-button');
+
+for(let i = 0; i < buttons.length; i++) {
+    buttons[i].style.maginBottom = '5px';
+    buttons[i].style.backgroundColor = 'wheat';
+    buttons[i].style.border = '1px.solid.white';
+}
 
 searchSpanError.style.color = 'white';
 searchSpanError.style.visibility = 'hidden';
@@ -53,6 +60,12 @@ function checkElements() {
     nextElButton.disabled = !element.nextElementSibling;
     parentElButton.disabled = !element.parentElement;
     childElButton.disabled = !element.firstElementChild;
+
+    if (element === main) {
+        prevElButton.disabled = true;
+        nextElButton.disabled = true;
+        parentElButton.disabled = true;
+    }
 }
 
 function selectElement() {
